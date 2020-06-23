@@ -1,16 +1,245 @@
 @import "~antd/dist/antd.css";
 
-.login-form {
-    max-width: 300px;
-    width: 50% !important;
-    margin-left: 35%;
-    margin-top: 10%;
+/* reset css bạn nhé */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
 }
 
-.login-form-button{
+
+/*-----------Chỉnh body cho đẹp-------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    background-color: #ededed;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bann.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form-intro {
+    position: relative;
+    text-align: center;
+}
+
+.form-intro p {
+    color: white;
+    font-weight: bold;
+}
+
+.form-intro p[2] {
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    width: 22%;
+    background: rgba(255, 255, 255, 0.07);
+    margin: 0% auto;
+    padding: 2em 1em;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 6px 12px 0 rgb(37, 37, 37);
+    -moz-box-shadow: 0 6px 12px 0 rgb(37, 37, 37);
+    box-shadow: 0 6px 43px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 25%
+}
+
+.login-form {
+    margin: 0 auto;
+}
+
+.login-form-forgot {
+    float: right;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+    color: white;
+}
+
+.anticon {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ant-form-item {
+    font-weight: bold;
+}
+
+.ant-col-rtl .login-form-forgot {
+    float: left;
+}
+
+.login-form-button {
     width: 100%;
 }
 
-.login-form-forgot{
-    float: right;
+@media screen and (max-width: 1680px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 82.6%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 81.5%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 80.8%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 83.5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 45%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 80.8%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 80.1%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 55%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 79.8%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .container {
+        width: 60%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 79.7%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .container {
+        width: 68%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        padding: 12px 60px 12px 15px;
+        font-size: 14px;
+        width: 82.9%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 70%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 82.8%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 73%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 82.5%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        width: 80%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 82.5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 78%;
+    }
+    .container {
+        padding: 2.5em 2em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    input[type="password"] {
+        width: 77%;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .ant-input-prefix-wrapper input[type="text"],
+    .ant-input-prefix-wrapper input[type="password"] {
+        width: 73.8%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 1.5em 1.3em;
+        width: 80%;
+    }
+    .ant-input-prefix-wrapper input[type="text"],
+    .ant-input-prefix-wrapper input[type="password"] {
+        padding: 12.5px 60px 12.5px 15px;
+        font-size: 13px;
+        width: 68.2%;
+    }
 }
